@@ -1,0 +1,14 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="QuordleSolver.Letter">
+    <Grid Width="50" Height="50">
+        <Label x:Name="Text" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#9ca3af" Content="T" FontSize="20" Foreground="White"/>
+        <Border x:Name="Border1" BorderBrush="#9ca3af" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="5,5,0,0" Width="25" Height="25" PointerPressed="Border_Pressed"/>
+        <Border x:Name="Border2" BorderBrush="#9ca3af" HorizontalAlignment="Right" VerticalAlignment="Top" BorderThickness="0,5,5,0" Width="25" Height="25" PointerPressed="Border_Pressed"/>
+        <Border x:Name="Border3" BorderBrush="#9ca3af" HorizontalAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0,0,5,5" Width="25" Height="25" PointerPressed="Border_Pressed"/>
+        <Border x:Name="Border4" BorderBrush="#9ca3af" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderThickness="5,0,0,5" Width="25" Height="25" PointerPressed="Border_Pressed"/>
+    </Grid>
+</UserControl>
