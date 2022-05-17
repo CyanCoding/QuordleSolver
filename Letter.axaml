@@ -4,11 +4,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="QuordleSolver.Letter">
-    <Grid Width="50" Height="50">
-        <Label x:Name="Text" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#9ca3af" Content="T" FontSize="20" Foreground="White"/>
-        <Border x:Name="Border1" BorderBrush="#9ca3af" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="5,5,0,0" Width="25" Height="25" PointerPressed="Border_Pressed"/>
-        <Border x:Name="Border2" BorderBrush="#9ca3af" HorizontalAlignment="Right" VerticalAlignment="Top" BorderThickness="0,5,5,0" Width="25" Height="25" PointerPressed="Border_Pressed"/>
-        <Border x:Name="Border3" BorderBrush="#9ca3af" HorizontalAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0,0,5,5" Width="25" Height="25" PointerPressed="Border_Pressed"/>
-        <Border x:Name="Border4" BorderBrush="#9ca3af" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderThickness="5,0,0,5" Width="25" Height="25" PointerPressed="Border_Pressed"/>
+    <Grid Width="60" Height="60">
+        <Border x:Name="Border1" BorderBrush="#9ca3af" HorizontalAlignment="Left" VerticalAlignment="Top" BorderThickness="5,5,0,0" Width="30" Height="30" PointerPressed="Border_Pressed">
+            <Label x:Name="Border1Text" Content="  " FontSize="10" Foreground="White" HorizontalAlignment="Left" Background="#9ca3af"/>
+        </Border>
+        <Border x:Name="Border2" BorderBrush="#9ca3af" HorizontalAlignment="Right" VerticalAlignment="Top" BorderThickness="0,5,5,0" Width="30" Height="30" PointerPressed="Border_Pressed">
+            <Label x:Name="Border2Text" Content="  " FontSize="10" Foreground="White" HorizontalAlignment="Right" Background="#9ca3af"/>
+        </Border>
+        <Border x:Name="Border3" BorderBrush="#9ca3af" HorizontalAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0,0,5,5" Width="30" Height="30" PointerPressed="Border_Pressed">
+            <Label x:Name="Border3Text" Content="  " FontSize="10" Foreground="White" HorizontalAlignment="Right" Background="#9ca3af"/>
+        </Border>
+        <Border x:Name="Border4" BorderBrush="#9ca3af" HorizontalAlignment="Left" VerticalAlignment="Bottom" BorderThickness="5,0,0,5" Width="30" Height="30" PointerPressed="Border_Pressed">
+            <Label x:Name="Border4Text" Content="  " FontSize="10" Foreground="White" HorizontalAlignment="Left" Background="#9ca3af"/>
+        </Border>
+        <Label x:Name="Text" ZIndex="2" Width="30" Height="50" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#9ca3af" Content="T" FontSize="20" Foreground="White" PointerPressed="Text_OnPointerPressed"/>
+        <Border x:Name="CoverBorder" CornerRadius="3" Width="60" Height="60" Background="#155e75" IsVisible="False" PointerPressed="Text_OnPointerPressed"/>
     </Grid>
 </UserControl>

@@ -3,41 +3,41 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:quordleSolver="clr-namespace:QuordleSolver"
-        mc:Ignorable="d" Height="400" Width="650"
+        mc:Ignorable="d" Height="400" Width="750"
         x:Class="QuordleSolver.MainWindow"
         Title="QuordleSolver">
     <Grid>
-        <Label Margin="0,50,0,0" Content="Try: Irate" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Label x:Name="MainLabel" Margin="0,50,0,0" Content="Round 0 - Try: Irate" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <Grid RowDefinitions="1*,1*,1*" ColumnDefinitions="1*,1*,1*,1*,1*,1*,1*,1*,1*,1*" Margin="0,100,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
-            <quordleSolver:Letter LetterText="Q" Grid.Row="0" Grid.Column="0"/>
-            <quordleSolver:Letter LetterText="W" Grid.Row="0" Grid.Column="1" Margin="10,0,0,0"/>
-            <quordleSolver:Letter LetterText="E" Grid.Row="0" Grid.Column="2" Margin="10,0,0,0"/>
-            <quordleSolver:Letter LetterText="R" Grid.Row="0" Grid.Column="3" Margin="10,0,0,0"/>
-            <quordleSolver:Letter LetterText="T" Grid.Row="0" Grid.Column="4" Margin="10,0,0,0"/>
-            <quordleSolver:Letter LetterText="Y" Grid.Row="0" Grid.Column="5" Margin="10,0,0,0"/>
-            <quordleSolver:Letter LetterText="U" Grid.Row="0" Grid.Column="6" Margin="10,0,0,0"/>
-            <quordleSolver:Letter LetterText="I" Grid.Row="0" Grid.Column="7" Margin="10,0,0,0"/>
-            <quordleSolver:Letter LetterText="O" Grid.Row="0" Grid.Column="8" Margin="10,0,0,0"/>
-            <quordleSolver:Letter LetterText="P" Grid.Row="0" Grid.Column="9" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="Q" LetterText="Q" Grid.Row="0" Grid.Column="0"/>
+            <quordleSolver:Letter x:Name="W" LetterText="W" Grid.Row="0" Grid.Column="1" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="E" LetterText="E" Grid.Row="0" Grid.Column="2" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="R" LetterText="R" Grid.Row="0" Grid.Column="3" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="T" LetterText="T" Grid.Row="0" Grid.Column="4" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="Y" LetterText="Y" Grid.Row="0" Grid.Column="5" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="U" LetterText="U" Grid.Row="0" Grid.Column="6" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="I" LetterText="I" Grid.Row="0" Grid.Column="7" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="O" LetterText="O" Grid.Row="0" Grid.Column="8" Margin="10,0,0,0"/>
+            <quordleSolver:Letter x:Name="P" LetterText="P" Grid.Row="0" Grid.Column="9" Margin="10,0,0,0"/>
             
-            <quordleSolver:Letter LetterText="A" Grid.Row="1" Grid.Column="0" Margin="0,10,-50,0"/>
-            <quordleSolver:Letter LetterText="S" Grid.Row="1" Grid.Column="1" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="D" Grid.Row="1" Grid.Column="2" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="F" Grid.Row="1" Grid.Column="3" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="G" Grid.Row="1" Grid.Column="4" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="H" Grid.Row="1" Grid.Column="5" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="J" Grid.Row="1" Grid.Column="6" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="K" Grid.Row="1" Grid.Column="7" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="L" Grid.Row="1" Grid.Column="8" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="A" LetterText="A" Grid.Row="1" Grid.Column="0" Margin="0,10,-50,0"/>
+            <quordleSolver:Letter x:Name="S" LetterText="S" Grid.Row="1" Grid.Column="1" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="D" LetterText="D" Grid.Row="1" Grid.Column="2" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="F" LetterText="F" Grid.Row="1" Grid.Column="3" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="G" LetterText="G" Grid.Row="1" Grid.Column="4" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="H" LetterText="H" Grid.Row="1" Grid.Column="5" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="J" LetterText="J" Grid.Row="1" Grid.Column="6" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="K" LetterText="K" Grid.Row="1" Grid.Column="7" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="L" LetterText="L" Grid.Row="1" Grid.Column="8" Margin="10,10,-50,0"/>
             
-            <quordleSolver:Letter LetterText="Z" Grid.Row="2" Grid.Column="1" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="X" Grid.Row="2" Grid.Column="2" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="C" Grid.Row="2" Grid.Column="3" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="V" Grid.Row="2" Grid.Column="4" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="B" Grid.Row="2" Grid.Column="5" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="N" Grid.Row="2" Grid.Column="6" Margin="10,10,-50,0"/>
-            <quordleSolver:Letter LetterText="M" Grid.Row="2" Grid.Column="7" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="Z" LetterText="Z" Grid.Row="2" Grid.Column="1" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="X" LetterText="X" Grid.Row="2" Grid.Column="2" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="C" LetterText="C" Grid.Row="2" Grid.Column="3" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="V" LetterText="V" Grid.Row="2" Grid.Column="4" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="B" LetterText="B" Grid.Row="2" Grid.Column="5" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="N" LetterText="N" Grid.Row="2" Grid.Column="6" Margin="10,10,-50,0"/>
+            <quordleSolver:Letter x:Name="M" LetterText="M" Grid.Row="2" Grid.Column="7" Margin="10,10,-50,0"/>
         </Grid>
-        <Button Margin="0,300,0,0" Content="Submit" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button Margin="0,320,0,0" Content="Submit" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Button_OnClick"/>
     </Grid>
 </Window>
